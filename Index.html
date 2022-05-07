@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/24c494a6b6.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+        body{
+            margin: 80px;
+        }
+        .nav{
+            /* border: 1px solid red; */
+            display: flex;
+         /* justify-content: space-between; */
+            /* margin: auto; */
+            align-items: center;
+        }
+
+        .nav>div{
+            /* border: 1px solid blue; */
+            margin-right: 100px;
+        }
+        .nav>div>img{
+            height: 60px;
+           
+        
+        }
+        .nav>div:nth-child(3){
+            /* margin-right: 20px; */
+            
+            width: 30%;
+            height: 50px;
+            font-size:25px;
+            display: flex;
+            justify-content: space-between;
+            margin-right: 8px;
+            
+        }
+        a{
+            text-decoration: none;
+            font-size: 20px;
+
+        }
+        #search{
+            
+            border: 3px solid rgb(255,218,0);
+            width:100%;
+            height: 35px;
+            border-radius: 50px;
+            border-top-right-radius: 0px;
+            border-bottom-right-radius: 0;
+             /* margin-left: 100px; */
+             
+        }
+        .nav>div:nth-child(2){
+            width: 40%;
+            display: flex;
+            
+            
+        }
+        div>button{
+            border: 0;
+            width: 50px;
+            border-top-right-radius: 30px;
+            border-bottom-right-radius: 30px;
+            background-color:  rgb(255,218,0);
+            font-size: 25px;
+        }
+        .home{
+            margin: auto;
+            width: auto;
+            display: flex;
+            /* justify-content: space-around; */
+            font-size: 25px;
+            font-weight: bold;
+           
+        
+        }
+        .home>img{
+            width: 100%;
+        }
+        .home>div{
+            /* border:1px solid teal; */
+            width: 100%;
+        }
+        .coupon{
+            width: 80%;
+        }
+        .home>div:nth-child(2){
+            display: flex;
+            
+            height: 50px;
+            align-items: center;
+            justify-content: space-around;
+        
+            background-color:  rgb(255,218,0);
+        }
+        .home>div:nth-child(1){
+            display: flex;
+            height: 50px;
+            width: 20.5%;
+            align-items: center;
+            justify-content: space-around;
+            color: white;
+            background-color:  rgb(0, 0, 0);
+        }
+        .home>div>a{
+            color: black;
+            
+        }
+        .home2{
+            display: flex;
+            /* border: solid palevioletred; */
+            height: auto;
+            background-image:url( "https://uidesign.gbtcdn.com/GB/image/9746/1190X420.jpg")
+        }
+        .home2>div:nth-child(1){
+            /* border:  solid gold; */
+            height: auto;
+            display: block;
+            width: 15%;
+            font-size: 20px;
+            padding: 10px;
+            background-color: rgb(171, 213, 199);
+            
+        }
+        .home2>div>img{
+            width:100%;
+            /* height: 100%; */
+        }
+        .home2>div>a{
+            display: block;
+            margin: 5px;
+            font-size: 16px;
+          
+
+        }
+        .collection{ margin: auto;
+            display: flex;
+            justify-content: space-around;
+           
+           
+           
+        }
+        .collection>div{
+            /* border: 1px solid black; */
+            text-align: center;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+            margin-right: 5px;
+        }
+        .COL{
+            margin-left: 40px;
+        }
+
+        #products{
+            justify-content: center;
+            /* border: 1px solid red; */
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(5,18%);
+            gap: 20px 10px;
+        }
+        #products>div:hover{
+            margin: auto;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+           
+            
+           
+        }
+        #products>div{
+            margin: auto;
+            text-align: center;
+           transition-duration:0.40s;
+            
+           
+        }
+        #products>div>img{
+            width: 99%;
+            /* border: solid orange; */
+        }
+        
+        
+        
+
+
+    </style>
+</head>
+<body>
+<div class="nav">
+    <div>
+        <img src="https://uidesign.gbtcdn.com/GB/images/promotion/2019/a_evan/Gearbest/logo_gearbest.png?imbypass=true" alt="">
+    </div>
+    <div>
+        <input   id="search" type="text" placeholder="Search Here" name="" id="">
+        <button>
+            <i class="fas fa-search"></i>
+        </button>
+    </div>
+    <div>
+        <a href="Signin.html"> <i class="fas fa-user"></i> Sign in</a>
+        <a href=""><i class="fa-solid fa-heart"></i></i>Favorites</a>
+        <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i>Cart</a>
+    </div>
+   
+</div> <div class="home">
+        <div>CATEGORY</div>
+        <div class="coupon">
+            <a href="">COUPON</a>
+            <a href="">SUPER DEALS</a>
+            <a href="">APP ONLY</a>
+            <a href="">NEW ARRIVALS</a>
+           
+        </div>
+       
+    </div>
+    <div class="home2">
+        <div>
+            <a href="">Consumer Electronics</a>
+            <a href="">Industrial & Scientific</a>
+            <a href="">Cell Phones & Accessories</a>
+            <a href="">Appliances</a>
+            <a href="">Outdoors,Fitness & Sport</a>
+            <a href="">Computers,Tablets & Office</a>
+            <a href="">Health & Personal Care</a>
+            <a href="">Home</a>
+            <a href="">D</a>
+            <a href="">H</a>
+            <a href="">M</a>
+            <a href="">M</a>
+            <a href="">W</a>
+            <a href="">Gearbest Promotion</a>
+        </div>
+        <div>
+            <!-- <img src="https://uidesign.gbtcdn.com/GB/image/9746/1190X420.jpg" alt=""> -->
+            
+        </div>
+    </div>
+    <h1 class="COL">COLLECTION</h1>
+<div class="collection">
+     <div>
+         <img src="https://uidesign.gbtcdn.com/GB/image/9534/New+Arrival+450x30+KUU.png" alt="">
+         <p>Original Xiaomi Vacuum</p>
+        </div>
+     <div>
+        <img src="https://gloimg.gbtcdn.com/soa/gb/item/6896502277952172032/16460/goods_thumb_220-v1/524849cb314c.jpg" alt="">
+    <p>Electronic Bike</p>
+    </div>
+   
+    <div>
+        <img src="https://gloimg.gbtcdn.com/soa/gb/item/6878391336429613056/16425/goods_thumb_220-v1/b2dcd4537dba.jpg" alt="">
+        <p>Niche Mi Store</p>
+    </div>
+    <div>
+        <img src="https://gloimg.gbtcdn.com/soa/gb/item/6907992381598134272/16487/goods_thumb_220-v8/cf425281b959.jpg" alt="">
+        <p>Popular Phones</p>
+    </div>
+</div>
+
+<h1 class="COL">SUPER DEALS</h1>
+<div class="collection">
+     <div>
+        <img src="https://gloimg.gbtcdn.com/soa/gb/item/6866325577285169152/16409/goods_thumb_220-v1/5b7959d3089f.jpg" alt="">
+        <p>Original Xiaomi Vacuum</p>
+        </div>
+     <div>
+        <img src="https://gloimg.gbtcdn.com/soa/gb/item/6900386065325158400/16467/goods_thumb_220-v1/be95b5a60f8e.jpg" alt="">
+    <p>Electronic Bike</p>
+    </div>
+    <div>
+        <img src="https://gloimg.gbtcdn.com/soa/gb/item/6870745450383863808/16454/goods_thumb_220-v1/42405dc55cb8.jpg" alt="">
+       <p>Mobiles Tech Store</p>
+    </div>
+    <div>
+        <img src="https://gloimg.gbtcdn.com/soa/gb/store/6878400698325856256/16445/goods_thumb_220-v1/9becbee26ae2.jpg" alt="">
+        <p>Niche Mi Store</p>
+    </div>
+    <div>
+        <img src="https://gloimg.gbtcdn.com/soa/gb/item/6878024229519028224/16457/goods_thumb_220-v2/eaa348bd6861.jpg" alt="">
+        <p>Popular Phone Case</p>
+    </div>
+</div>
+<h1>RECOMENDED PRODUCTS</h1>
+   <div id="products">
+      
+   </div>
+
+</body>
+</html>
+
+<script>
+    var products=[
+    {  img:"https://gloimg.gbtcdn.com/soa/gb/item/6866331803104505856/16406/goods_img-v1/c54120f58bbb.jpg",
+           Name:"Samsung Galaxy",
+           price:19999
+          
+
+        },
+       
+        {
+            img:"https://gloimg.gbtcdn.com/soa/gb/store/6900783172733300736/16468/goods_img-v1/e483ba511256.jpg",
+            Name:"Xiaomi Redmi Note 10",
+            price:16999,
+        },
+        {
+            img:"https://gloimg.gbtcdn.com/soa/gb/item/6878028664286670848/16425/goods_img-v1/dbbcdadb0d1f.jpg",
+            Name:"Wireless Bluetooth",
+            price:999,
+        },
+        {
+            img:"https://gloimg.gbtcdn.com/soa/gb/item/6878026654363611136/16417/goods_img-v1/3fd31551a79e.jpg",
+            Name:"Smart Watch",
+            price:1599,
+        },
+        {
+            img:"https://gloimg.gbtcdn.com/soa/gb/item/6866331803104505856/16413/goods_img-v1/6e424165fe57.jpg",
+            Name:"realme 8i",
+            price:18999,
+        },
+        {
+            img:"https://gloimg.gbtcdn.com/soa/gb/store/6866331803104505856/16424/goods_img-v5/3a9604a2c8f6.jpg",
+            Name:"CPU Diagram T Shirt",
+            price:899,
+        },
+        {
+            img:"https://gloimg.gbtcdn.com/soa/gb/store/6866331803104505856/16420/goods_img-v5/e534be13f871.jpg",
+            Name:"LED Flashlight",
+            price:599,
+        },
+        {
+            img:"https://gloimg.gbtcdn.com/soa/gb/store/6866331803104505856/16499/goods_img-v5/8f7633ce94b9.jpg",
+            Name:"4TB External SSD",
+            price:2599,
+        },
+        
+        {
+            img:"https://gloimg.gbtcdn.com/soa/gb/item/6883820374342168576/16488/goods_img-v1/bbf851606779.jpg",
+            Name:"Mixium",
+            price:23559,
+        },
+        {
+            img:"https://gloimg.gbtcdn.com/soa/gb/item/6868955312079171584/16502/goods_img-v1/4e9e81a0cd1c.jpg",
+            Name:"Prime Wireless Camera",
+            price:21999,
+        },
+        {
+            img:"https://gloimg.gbtcdn.com/soa/gb/item/6878024229519028224/16490/goods_img-v2/4e013d85260e.jpg",
+            Name:"Protection Case",
+            price:299,
+        },
+        {
+            img:"https://gloimg.gbtcdn.com/soa/gb/store/6615272824267153408/16469/goods_img-v4/9c9fe52ff414.jpg",
+            Name:"Poco M4 Pro 5G NFC",
+            price:15499,
+        },
+        {
+            img:"https://gloimg.gbtcdn.com/soa/gb/item/6866325577285169152/16414/goods_img-v1/76cb26d2019a.jpg",
+            Name:"USLION magnetic USB Cable",
+            price:799,
+        },
+        {
+            img:"https://gloimg.gbtcdn.com/soa/gb/item/6615272824267153408/15960/goods_img-v2/24954ff004ab.jpg",
+            Name:"EKEN H9R Ultra HD Camera",
+            price:49999,
+        },
+        {
+            img:"https://gloimg.gbtcdn.com/soa/gb/item/6878402251153666048/16516/goods_img-v3/f25f1fc44154.jpg",
+            Name:"Xiaomi Redmi Airdots",
+            price:25799,
+        },
+        {
+            img:"https://gloimg.gbtcdn.com/soa/gb/item/6880475736935952384/16427/goods_img-v1/1993a3019ba8.jpg",
+            Name:"Roborock Robot Vacuum",
+            price:30000,
+        },
+        {
+            img:"https://gloimg.gbtcdn.com/soa/gb/store/6868554669891973120/16390/goods_img-v1/3f59df6b44c6.jpg",
+            Name:"Laser Pointer USB Rechargeble",
+            price:7466,
+        },
+        {
+            img:"https://gloimg.gbtcdn.com/soa/gb/item/6866331803104505856/16394/goods_img-v1/6b1192f5ecdd.jpg",
+            Name:"Fashion Men Luxury Stainless",
+            price:1099,
+        },
+        {
+            img:"https://gloimg.gbtcdn.com/soa/gb/item/6878391336429613056/16423/goods_img-v1/53adc09280d4.jpg",
+            Name:"Xiaomi Mijia Sonic Toothbrush",
+            price:3999,
+        },
+        {
+            img:"https://gloimg.gbtcdn.com/soa/gb/item/6878024229519028224/16457/goods_img-v5/4c8bbf220a9c.jpg",
+            Name:"Shockproof Case for Redmi",
+            price:499,
+        },
+        {
+            img:"https://gloimg.gbtcdn.com/soa/gb/item/6701436345185419264/16403/goods_img-v1/f28aa97ee079.jpg",
+            Name:"Portable Bluetooth",
+            price:6079,
+        },
+        {
+            img:"https://gloimg.gbtcdn.com/soa/gb/item/6883820374342168576/16499/goods_img-v5/3aef13f28d2e.jpg",
+            Name:"Mi 11 Ultra",
+            price:26799,
+        },
+        {
+            img:"https://gloimg.gbtcdn.com/soa/gb/item/6615272824267153408/15948/goods_img-v14/bfdf0b3a04e9.jpg",
+            Name:"MI Band Smart Bracelet",
+            price:12699,
+        },
+        {
+            img:"https://gloimg.gbtcdn.com/soa/gb/item/6878025592978206720/16498/goods_img-v5/eca3dcc2ab20.jpg",
+            Name:"Pro 5G Drone",
+            price:10499,
+        },
+        {
+            img:"https://gloimg.gbtcdn.com/soa/gb/item/6900746726869757952/16492/goods_img-v3/e0b65bad2e24.jpg",
+            Name:"Redmibook Pro 15",
+            price:122080,
+        },
+        {
+            img:"https://gloimg.gbtcdn.com/soa/gb/item/6901962188706213888/16473/goods_img-v5/2f6731bcaf17.jpg",
+            Name:"DNaik Rugged",
+            price:17999,
+        },
+        {
+            img:"https://gloimg.gbtcdn.com/soa/gb/item/6882688590640508928/16448/goods_img-v3/6f9c892c7ec6.jpg",
+            Name:"Temperature Tester",
+            price:8000,
+        },
+        
+        {
+            img:"https://gloimg.gbtcdn.com/soa/gb/item/6878402251153666048/16417/goods_img-v3/aa32def5d51a.jpg",
+            Name:"Smart Watch Men 400Mah",
+            price:9999,
+        },
+        {
+            img:"https://gloimg.gbtcdn.com/soa/gb/store/6866331803104505856/16506/goods_img-v3/6248da281b3d.jpg",
+            Name:"Solar Street Lights Lamp",
+            price:399,
+        },
+        {
+            img:"https://gloimg.gbtcdn.com/soa/gb/item/6878024229519028224/16492/goods_img-v2/82189860aae0.jpg",
+            Name:"360 Full Protection Cover",
+            price:299,
+        },
+        {
+            img:"https://gloimg.gbtcdn.com/soa/gb/item/6868971002878160896/16503/goods_img-v1/74765d91308d.jpg",
+            Name:"Dough Mixers Electric",
+            price:1699,
+        },
+    ]
+
+products.forEach(function(elem){
+     var box=document.createElement("div")
+    box.addEventListener("click",function(){
+        productpage(elem)
+    })
+    var img=document.createElement("img")
+    img.src=elem.img
+    var Name=document.createElement("p")
+    Name.innerText=elem.Name
+    var price=document.createElement("p")
+    price.innerText="Rs"+elem.price
+
+    box.append(img,Name,price)
+    document.querySelector("#products").append(box)
+  
+})
+var productarr=[]
+function productpage(elem)
+        {
+            productarr.push(elem)
+            localStorage.setItem("productstore",JSON.stringify(productarr))
+            window.location.href="Signin.html"
+            productarr=[];
+        }
+   
+</script>

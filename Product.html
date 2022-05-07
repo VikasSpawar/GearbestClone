@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <script
+      src="https://kit.fontawesome.com/24c494a6b6.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+        body{
+            margin: 80px;
+        }
+        .nav{
+            /* border: 1px solid red; */
+            display: flex;
+         /* justify-content: space-between; */
+            /* margin: auto; */
+            align-items: center;
+        }
+
+        .nav>div{
+            /* border: 1px solid blue; */
+            margin-right: 100px;
+        }
+        .nav>div>img{
+            height: 60px;
+           
+        
+        }
+        .nav>div:nth-child(3){
+            /* margin-right: 20px; */
+            margin-left: -50px;
+            width: 400px;
+            height: 50px;
+            font-size:25px;
+            display: flex;
+            justify-content: space-between;
+            margin-right: 8px;
+            
+        }
+        a{
+            text-decoration: none;
+            font-size: 18px;
+
+        }
+        #search{
+            
+            border: 3px solid rgb(255,218,0);
+            width:100%;
+            height: 35px;
+            border-radius: 50px;
+            border-top-right-radius: 0px;
+            border-bottom-right-radius: 0;
+             /* margin-left: 100px; */
+             
+        }
+        .nav>div:nth-child(2){
+            width: 60%;
+            display: flex;
+            
+            
+        }
+        .b>button{
+            border: 0;
+            width: 50px;
+            border-top-right-radius: 30px;
+            border-bottom-right-radius: 30px;
+            background-color:  rgb(255,218,0);
+            font-size: 25px;
+        }
+        .home{
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+            margin: auto;
+            width: auto;
+            display: flex;
+            /* justify-content: space-around; */
+            font-size: 25px;
+            font-weight: bold;
+           
+        
+        }
+        .home>img{
+            width: 100%;
+        }
+        .home>div{
+            /* border:1px solid teal; */
+            width: 100%;
+        }
+        .coupon{
+            width: 80%;
+        }
+        .home>div:nth-child(2){
+            display: flex;
+            
+            height: 50px;
+            align-items: center;
+            justify-content: space-around;
+        
+            background-color:  rgb(255, 255, 255);
+        }
+        .home>div:nth-child(1){
+            display: flex;
+            height: 50px;
+            width: 20.5%;
+            align-items: center;
+            justify-content: space-around;
+            color: rgb(0, 0, 0);
+            background-color:  rgb(255, 255, 255);
+        }
+        .home>div>a{
+            color: black;
+            
+        }
+       
+       
+       
+      
+     
+
+        #products{
+            justify-content: center;
+            /* border: 1px solid red; */
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(5,18%);
+            gap: 20px 10px;
+        }
+        #products>div:hover{
+            margin: auto;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+           
+            
+           
+        }
+        #products>div{
+            margin: auto;
+            text-align: center;
+           transition-duration:0.40s;
+            
+           
+        }
+        #products>div>img{
+            width: 99%;
+            /* border: solid orange; */
+        }
+        .signin>p{
+    margin-top: 0;
+}
+
+/* 
+Copy data */
+body{
+           background-color: #f0f0f0;
+        }
+       
+      
+      
+       
+        
+      
+       
+      
+
+      
+       
+        
+       
+       
+       
+      
+       
+        
+       
+       
+      
+    
+     
+      
+  
+
+        
+      
+       
+        
+       #box{
+           display: flex;
+           margin-left: 45px;
+           margin-top: 35px;
+       }
+       #lang{
+           height: 25px;   
+           margin-left: 8px;
+           background-color: #f0f0f0;
+           border: none;
+       }
+       #box>span{
+           margin-left: 8px;
+           font-weight: bold;
+       }
+       #box>i{
+           margin-top: 5px;
+           color: rgb(240, 61, 61);
+       }
+       #lang:hover{
+           background-color: white;
+           cursor: pointer;
+       }
+       #ser{
+            background-color: #4d82b8;
+            color: white;
+            padding: 10px;
+            height: 95%;
+            border: none;
+            padding-right: 20px;
+            font-size: 18px;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+        .signin{
+           font-size: 15px;
+           margin-left: -35px;
+           margin-top: 30px;
+       }
+      
+        #searchBox{
+            display: flex;
+            margin-left: 50px;
+            background-color: white;
+            height: 50%;
+            /* width: auto; */
+            /* border: 1px solid red; */
+            margin-top: 25px;
+            padding-left: 10px;
+        }
+        #searchBox>div:nth-child(2){
+            margin-top: 15px;
+            margin-left: 14px;
+        }
+        #belowslectBox+i{
+            margin-top: 100px;
+        }
+        #container{
+            display: flex;
+            width: 80%;
+            margin: auto;
+            gap: 15px;
+            /* border: 1px solid red; */
+            /* height: 700px; */
+            background-color: white;
+            margin-top: 40px;
+        }
+        
+        #box1{
+            width: 45%;
+            /* border: 1px solid blue; */
+            text-align: center;
+            height: auto;
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+           
+        }
+        #boximg{ border: 1px solid rgb(192, 192, 192);
+            margin-top: 30px;
+            width: 400px;
+            height: 400px;
+        }
+        #box2{
+            width: 55%;
+            /* border: 1px solid blue; */
+        }
+        #box2>i{
+            color: #ff761b;
+        }
+        #stprice{
+            margin-top: -34px;
+            margin-left: 5px;
+            text-decoration: line-through;
+            color: gray;
+        }
+        #price{
+            margin-top: -40px;
+            margin-left: 54px;
+            font-size: 30px;
+            font-weight: bold;
+            color: rgb(243,2,64);
+        }
+        .div{
+            display: flex;
+           
+            /* border: 1px solid blue; */
+        }
+        #div1{
+        
+            margin-left: 28px;
+          font-size: 14px;
+          
+            
+        }
+        .btn>button{
+           
+            font-size: 10px;
+            height: 40px;
+            margin-top: 10px;
+            margin-left: 20px;
+            background-color: white;
+            border: 1px solid rgb(71, 70, 70);
+            color: gray;
+        }
+        .btn>button:hover{
+            border: 2px solid rgb(243,2,64);
+        }
+        .p{
+            font-size: 15px;
+        }
+        .btn{
+          
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+        }
+        #cou{
+            color:#6391bf;
+        }
+        .div1{
+            margin-left: 30px;
+        }
+        #sel{
+            height: 40px;
+            margin-top: 5px;
+            text-decoration: underline;
+            border: none;
+            color: gray;
+        }
+        #sel:hover{
+        color: #6391bf;
+        }
+        #div2{
+            margin-left: 68px;
+            margin-top: 10px;   
+            background-color: white;   
+            height: 30px;  
+        }
+        #div2:hover{
+            border: 2px solid rgb(243,2,64);
+        }
+        #bk:hover{
+            border: 2px solid rgb(243,2,64);
+        }
+        #bk{
+            background-color: black;
+            color: white;
+            height: 30px;  
+        }
+        #eu{
+            margin-left: 48px;
+        }#eu>button{
+            margin-top: 15px;
+            margin-left: 10px;
+            padding: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+            background-color: white;
+            border: 1px solid gray;
+            color: rgb(63, 62, 62);
+        }
+        #eu>button:hover{
+            border: 2px solid rgb(243,2,64);
+        }
+       
+        #but>button{
+            padding: 15px;
+            padding-left: 20px;
+            padding-right: 20px;
+            font-size:15px ;
+            font-weight: bold;
+            color: white;
+            background-color: rgb(243,2,64);
+            border:2px solid rgb(243,2,64) ;
+            
+             width: 200px ;
+             font-size: 18px; 
+        }
+       #but>button:nth-child(2){
+        background-color: rgb(255, 226, 232);
+        border: 2px solid rgb(243,2,64);
+        color: rgb(243,2,64);
+
+       }
+       #but>i{
+           margin-left: 30px;
+           font-size: 25px;
+           margin-top: 10px;
+           color: gray;
+       }
+       #but>i:hover{
+           color: red;
+       }
+        
+        #cou+h2{
+            background-color:rgb(243,2,64);
+             font-style: italic;
+             color: white;
+             font-size: 30px;
+             height: 50px;
+             vertical-align: middle;
+            padding-left: 10px;
+        }
+        .p{
+            display: inline;
+        }
+        .p+.m{
+            margin-left: 5px;
+        }
+        #container{
+            width: 100%;
+        }
+        #or+button+button{
+           padding:0;
+           margin: 0;
+           border: 0;
+           position: relative;
+           bottom: -20px;
+           width: auto;
+           height: 50px;
+           
+
+        }
+        button>img{
+            width: 140px;
+            padding: 0;
+            margin: 0;
+
+            
+        }
+        .btn>button:nth-child(2),button:nth-child(3){
+            font-size: 14px;
+        }
+        .qty{
+            display: inline;
+            position: relative;
+            top: 0;
+        }
+        
+        p>.plus{
+            margin-left: 61px;
+        }
+        .color{
+            border: 1px solid rgb(243,2,64);
+            background-color: white;
+            padding: 5px;
+            color: rgb(243,2,64);
+        }
+
+    </style>
+</head>
+<body>
+<div class="nav">
+    <div>
+        <img src="https://uidesign.gbtcdn.com/GB/images/promotion/2019/a_evan/Gearbest/logo_gearbest.png?imbypass=true" alt="">
+    </div>
+    <div class="b">
+        <input   id="search" type="text" placeholder="Search Here" name="">
+        <button>
+            <i class="fas fa-search"></i>
+        </button>
+    </div>
+    <div>
+        <a class="signin" href=""> <i class="fas fa-user"></i></a>
+        <a href=""><i class="fa-solid fa-heart"></i></i>Favorites</a>
+        <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i>Cart</a>
+    </div>
+   
+</div> <div class="home">
+        <div>CATEGORY
+            <select name="" id=""></select>
+        </div>
+        <div class="coupon">
+            <a href="">COUPON</a>
+            <a href="">SUPER DEALS</a>
+            <a href="">APP ONLY</a>
+            <a href="">NEW ARRIVALS</a>
+           
+        </div>
+       
+    </div>
+    <div id="container">
+        
+        <div id="box1">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAaAAAAB5CAMAAABIrgU4AAABOFBMVEX///8AZv83WZnqPDUAswA8rvAAYf8AsQAArgDqOzT7/P0AW/8AqwAxVJYApQD/+/v0+v4ppu8vqe8AU/8AV//6/vorT5Py+/LoLyfpNi7U79QRn+7a7vvG5vqwu9OS0Pb96ei/678bR5DoIhj4xMPY3ur62tjU4P9JsvHrUk5czFzEzN49uj3A1P/tXVcDOoicuv+rxf9Yc6iLncGLrf97pv/0nZrp9f0Aav/mAAAARP8APP+frMrn+Oh2wPNynv/3urfm6vGGmL72raoATv/J2/9TvlSX35odryCt2/jG68iG0ojyko/wgX6x47NuvPP60tDwcmwpryqj3qVkxGbi6/84wTsadf9tgrEAJ35Xh/9pkv9ceKz1pKBJY50GPYp30nxEuUdexGHxe3XwbGV303lFx0ZIif9m10hzAAAPI0lEQVR4nO2de1/aSBfHUQQCRi5RINwKGLVQaW21leI2CNLlLljB1m1rC1afvv938MxMLiRkEpKAWnbn98d+NiFEyLfnzJkzZw4OBxERERERERERERERERERERERERERERERERERERERERERERERERERERERERER0WMoWK3uWlO1GsTcppi0qmLRp7lNIJPZs6hMJqC5TZjn41bFRzW38RWvnlvU1VVxIVjk57p79mMjYk0bP472pxD5kum+y5oYV66cmvoygUztzslalPOulpn6VnzvxZrHotY+N+Jh9W2KL0+/uK1pfeXLu+eYf792VT36efDTIp/I9s+DyFFVeZtgy5VIhBiLCiUS5aSKz06+VOKsAuJKpfyFyojiY7+fpiyK9vubA6UR+a5Ot04+bq1b09bHk623Vwvjc/1PZNWOtg+uFYSC6UTIov0g5ZhETkEoUOM4r9OGvCWuovhW7TW/Z82OaLqjIPT868n6ig293/zrdEGEgmf/bNjis7oaOTiTDdnXCoVydgABJfoTL7fDcnbwQHHshXybeNNvCw8iNJC93NW3E/d7O4BW3rv/ercQL+fbP7BnP4hQ5Jl0n1TOlv2IhNLSdwnkbfMBhF5JTi56b5sPIDRuSw/n9aYt+0GEtj7+rY1/rCv4/cA2H+DlJCcXTIcY23xyiZxkQjf2/JugmOzkeIq2D4iiB+Jtnn/dtMsHEDr5tohY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" alt="">
+        </div>
+        <div id="box2">
+         <h2 id="name"></h2>
+         <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <p id="cou">(Coustomer Review)</p>
+            <h2>Flash Sale</h2>
+            
+            <p class="p">Price:</p>
+            <p class="p" id="price"></p>
+            <p class="p">RRP:</p>
+            <p class="p m" id="stprice"></p>
+
+      
+       
+            <div class="div">
+                <p>Shipping:</p>
+                <p class="div1"> This item can't be shipped to</p> 
+                <select name="" id="sel">
+                    <option value="">India</option>
+                    <option value="">Sri lanka</option>
+                    <option value="">USA</option>
+                    <option value="">UK</option>
+                </select>
+            </div>
+            <p>Color: <button class="color">Black</button> <button class="color">White</button> </p>
+
+        <div class="div">
+            <p class="p">Ship From:</p> 
+            <div class="btn">
+            <button id="div1">USA</button> 
+            <button>India</button> 
+            <button>Japan</button> 
+            
+        </div>
+   </div>
+       <div class="div" >
+           <p class="ml">QTY: <button class="plus">-</button> <span class="qty"></span>     <button class="min">+</button>  </p>
+          
+       </div>
+      
+       <div id="but">
+             <button id="or" onclick="addtocart()"></i> Add TO Cart</button>
+           
+           <button>Buy Now</button>
+            <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa3Ocn9J1bc4KS6eZSI99m-60nlAAVuPzOeA&usqp=CAU" alt=""></button>
+            <p> <span><i class="fa-regular fa-heart"></i></span> Add To Favorites</p>
+        </div>
+        </div>
+    </div>
+
+   
+   
+<h1>RECOMENDED PRODUCTS</h1>
+   <div id="products">
+      
+   </div>
+
+</body>
+</html>
+
+<script>
+    var data=JSON.parse(localStorage.getItem("productstore"))
+    var databyanu=JSON.parse(localStorage.getItem("favorite"))||[]
+    var databyanubhav=JSON.parse(localStorage.getItem("cart"))||[]
+
+        //     Name: "Samsung Galaxy"
+        // img: "https://gloimg.gbtcdn.com/soa/gb/item/6866331803104505856/16406/goods_img-v1/c54120f58bbb.jpg"
+        // price: 19999
+
+    data.map(function (ele){
+        var image=document.createElement("img")
+        image.src=ele.img
+        image.setAttribute("id","boximg")
+        document.querySelector("#box1").append(image)
+    })
+    console.log(data[0].Name)
+    
+    document.querySelector("#name").innerText=data[0].Name
+    if(data[0].strikeofprice=="")
+    {
+     document.querySelector("#stprice").innerText="None"
+    }
+    else{
+        document.querySelector("#stprice").innerText=data[0].price+999
+    }
+    document.querySelector("#price").innerText="Rs."+data[0].price
+    
+
+    var cartdata=[]
+    function addtocart(){
+        alert("Added To Cart")
+        cartdata.push(data[0])
+        localStorage.setItem("cart",JSON.stringify(cartdata))
+    }
+  var count=1
+    document.querySelector(".qty").innerText=count;
+    document.querySelector(".min").addEventListener("click",add)
+    function add(){
+        count++
+        document.querySelector(".qty").innerText=count;
+    }
+    document.querySelector(".plus").addEventListener("click",min)
+
+    function min(){
+        if(count>=2){
+             count--
+             document.querySelector(".qty").innerText=count;
+        }
+       
+    }
+  
+
+   
+</script>

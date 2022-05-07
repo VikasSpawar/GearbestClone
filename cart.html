@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            background-color: rgb(242,242,242);
+        }
+        #logo{
+          
+          padding: 15px;
+            display: flex;
+            justify-content: space-between;
+
+            width: 100%;
+            /* border: 1px solid teal; */
+            background-color: white;
+        }
+        .logo{
+            /* border: 1px solid red; */
+           height: 50px;
+          position: relative;
+            left: 50px;
+        }
+        .flag{
+            width: 20px;
+        }
+        .box{
+            margin: 70px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .info{
+            background-color: white;
+            /* border: 1px solid red; */
+            display: flex;
+            width: 100%;
+            
+            
+            justify-content: space-between;
+        }
+        .info2{
+            /* border: 1px solid blue; */
+            display: flex;
+            justify-content: space-around;
+            width: 60%;
+        }
+        .info>div:nth-child(1){
+            padding-left: 10px;
+        }
+        .card{
+            background-color: white;
+            height: 200px;
+            width: 95%;
+        }
+
+        .logo+p{
+            position: relative;
+            right: 100px;
+        }
+        .box2{
+            display: flex;
+            background-color: white;
+            margin: auto;
+            margin-bottom: 30px;
+            width: 90%;
+            /* border: 1px solid rgb(5, 0, 163); */
+        }
+       
+        .imgbox{
+            /* border: 1px solid rgb(255, 0, 0); */
+            width: 600px;
+            height: 100%;
+        }
+        .imgbox+div{
+            height: 100%;
+            width: 100%;
+            /* border:1px solid blue; */
+        }
+        .check{
+         
+           margin: 60px 20px 10px 20px;
+        }
+        #image{
+            width: 100px;
+        }
+        table{
+            /* border: 1px solid teal; */
+            width: 100%;
+        }
+       
+        #divbtn{
+            display: flex;
+            height: 30px;
+            justify-content: center;
+            position: relative;
+            right: 60px;
+        }
+        #divbtn>h3{
+            position: relative;
+            bottom: 10px;
+            margin: 10px
+        }
+        #td5{
+            color: red;
+            font-weight: 500;
+
+        }
+        #removebtn{
+            border: 0;
+            background-color: white;
+            color: rgb(255, 0, 0);
+        }
+        .price{
+            position: relative;
+            right: 25px;
+            
+            
+            font-weight: 500;
+        }
+        .checkout{
+            background-color: white;
+        }
+        .first{
+           
+            text-align: end;
+            margin-right: 110px;
+        }
+        .sec{
+            display: flex;
+            text-align: end;
+            margin-right: 100px;
+            justify-content: right;
+            
+        }
+        .sec>button{
+            margin-left: 30px;
+            height: 50px;
+            background-color: rgb(255, 225, 0);
+            /* border-radius: 20px; */
+            border:0;
+            font-size: 20px;
+            font: bold;
+            
+        }
+        .sec>img:nth-child(2){
+            margin-left: 30px;
+        }
+        .total{
+            color: red;
+            font: bold;
+            font-size: 25px;
+            margin-left: 100px;
+            
+        }
+        .sub{
+            margin-left: 80px;
+        }
+        span{
+            
+            margin-left: 120px;
+            
+        }
+        .inner{
+            /* border: 1px solid black; */
+            display: flex;
+            margin: auto;
+            text-align: center;
+            align-items: center;
+            width: 95%;
+            justify-content: space-between;
+            margin-left: 70px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+       
+        
+        
+
+    
+
+    
+    </style>
+</head>
+<body>
+    <div id="logo">
+        <img class="logo" src="https://uidesign.gbtcdn.com/GB/images/promotion/2019/a_evan/Gearbest/logo_gearbest.png?imbypass=true" alt="">
+        <p>Shit to <img class="flag" src="https://uidesign.gbtcdn.com/GB/app/2018/flag_png/in.png" alt="">/ Rupee</p>
+    </div>
+    <div class="box">
+
+
+        <div class="info">
+            <div> <p>Selected</p> </div>
+            <div class="info2">
+                <p>Unit Price</p>
+                <p>Quantity</p>
+                <p>Subtotal</p>
+                <p>Operation</p>
+            </div>
+
+
+        </div>
+
+       
+    </div> 
+
+    <div class="box2">
+        <input class="check" type="checkbox">
+      
+      
+ <table >
+           <tbody id="tbody">
+            
+           </tbody>
+
+       </table>
+    </div>
+   
+  
+<div class="checkout">
+    <div class="first">
+        <div class="inner">
+          <div>
+               <h3> <img src="https://css.gbtcdn.com/imagecache/gbw/img/site/money_back@.png" alt=""> 45 days</h3>
+               <p>Money Back Guarantee</p>
+          </div>
+          <div>
+              <h3> <img src="https://css.gbtcdn.com/imagecache/gbw/img/site/repair@.png" alt=""> 360 days</h3>
+              <p>Free Repair Warranty</p>
+          </div>
+           <div>
+                <p>Your subtotal        <span class="sub"></span></p>
+                    <p>Promotion       <span>-0.00</span></p>
+                    <p> Total       <span class="total"></span></p>
+           </div>
+           
+        </div>
+        
+       
+    </div>
+    <div class="sec">
+        <img src="https://css.gbtcdn.com/imagecache/gbw/img/buynow_en.93a4b6e.png" alt="">
+        <img src="https://css.gbtcdn.com/imagecache/gbw/img/paypal_credit_en.10b3871.png" alt="">
+        <button> <a href="payment.html">Checkout</a></button>
+    </div>
+</div>
+     
+</body>
+</html>
+
+<script>
+    
+
+ 
+let cartData = JSON.parse(localStorage.getItem("cart"))
+console.log(cartData)
+
+
+
+cartData.map(function(elem,index){
+  var  x="RS."+elem.price
+    localStorage.setItem("Gprice",x)
+document.querySelector(".sub").innerText="Rs."+elem.price
+document.querySelector(".total").innerText="Rs."+elem.price
+    let tr = document.createElement("tr");
+
+    let img = document.createElement("img");
+    img.setAttribute("id","image")
+    img.src = elem.img; 
+
+    let tra = document.createElement("tr")
+    tra.setAttribute("class","name")
+    tra.innerText = elem.Name
+    let btn = document.createElement("button")
+    btn.setAttribute("id","removebtn")
+    btn.style="cursor:pointer; rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;border:none"
+    btn.innerText = "Delete"
+    btn.addEventListener("click",function(){
+      removeItem(elem,index)
+    })
+    function removeItem(){
+     cartData.splice(index,1)
+    // console.log(cartData)
+    localStorage.setItem("cart",JSON.stringify(cartData))
+    window.location.reload();
+    
+    }
+
+    let td2 = document.createElement("td");
+    td2.append(tra)
+    // td2.innerText = elem.name
+    // td2.style.fontFamily="Segoe UI"
+
+    let tr1 = document.createElement("tr")
+    tr1.setAttribute("class","price")
+    tr1.innerText = "Rs."+elem.price
+    let tr2 = document.createElement("tr")
+    tr2.innerText = elem.strikeofprice
+    tr2.style.textDecoration="line-through"
+    tr2.style.color="grey"
+
+    let td3 = document.createElement("td")
+    td3.append(tr1)
+    td3.style.fontFamily="Segoe UI"
+
+    let td4 = document.createElement("td")
+    td4.setAttribute("id","td4")
+
+    let divbtn = document.createElement("div")
+    divbtn.setAttribute("id","divbtn")
+    
+    let counter = 1;
+    let btn1 = document.createElement("button")
+    btn1.setAttribute("id","btn1")
+    btn1.innerText = "-"
+    btn1.addEventListener("click",function(){
+        dec(elem)
+    })
+    
+    function dec()
+    {
+         counter --;
+         h3.innerText=counter;
+        if(counter >= 1){
+            h3.innerText=counter;
+          }
+          else{
+          counter = 1
+          h3.innerText=counter;
+          }
+         td5.innerText =elem.price * counter
+          
+         let array= Array.from(document.querySelectorAll("#td5")).map(x => +(x.innerText))
+         let sum = 0;
+         for(let elem of array){
+             sum += elem;
+             
+         }
+        var x="RS."+sum
+         localStorage.setItem("Gprice",x)
+       
+         document.querySelector(".sub").innerText="Rs."+sum
+         document.querySelector(".total").innerText="Rs."+sum
+        
+          
+        }
+    
+    let h3 = document.createElement("h3")
+    h3.setAttribute("id","h3")
+    h3.innerText = counter
+
+    let btn2 = document.createElement("button")
+    btn2.setAttribute("id","btn2")
+    btn2.innerText = "+"
+    btn2.addEventListener("click",function(){
+        inc(elem)
+    })
+    
+    function inc()
+    {
+       
+        counter ++;
+        if(counter > 1){ 
+          h3.innerText=counter  
+        } 
+         td5.innerText =elem.price * counter
+
+         let array= Array.from(document.querySelectorAll("#td5")).map(x => +(x.innerText))
+        let sum = 0;
+        for(let elem of array){
+            sum += elem;
+        }
+        var x="RS."+sum
+        localStorage.setItem("Gprice",x)
+        document.querySelector(".sub").innerText="Rs."+sum
+         document.querySelector(".total").innerText="Rs."+sum
+      
+    }
+    divbtn.append(btn1,h3,btn2)
+    td4.append(divbtn)
+
+    let td5 = document.createElement("td")
+    td5.setAttribute("id","td5")
+    td5.style.fontFamily="Segoe UI"
+    td5.innerText = "Rs."+elem.price;
+    
+    var td6=document.createElement("td")
+    td6.append(btn)
+ 
+    tr.append(img,td2,td3,td4,td5,td6)
+    
+    document.querySelector("#tbody").append(tr) 
+})
+
+
+console.log(localStorage.getItem("Gprice"))
+// console.log(tdata)
+</script>
