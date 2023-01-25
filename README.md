@@ -12,7 +12,7 @@ Tech Stack:
 HTML | CSS | JavaScript 
 
 
-
+<img  src="ABC" alt="Image"/>
 
 
 
